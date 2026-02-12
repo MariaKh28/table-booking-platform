@@ -38,15 +38,7 @@ export class TableGatewayService {
 
     let filteredResults = results;
 
-    const MIN_TABLES = 5;
     const MAX_TABLES = 25;
-
-    if (filteredResults.length < MIN_TABLES) {
-      errors.push({
-        provider: "",
-        message: `Найдено менее ${MIN_TABLES} столов. Попробуйте изменить параметры поиска.`,
-      });
-    }
 
     if (filteredResults.length > MAX_TABLES) {
       filteredResults = filteredResults.slice(0, MAX_TABLES);

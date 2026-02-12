@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 12px;
+}
+
+.noResults {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
